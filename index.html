@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <h1>Personal Details Form</h1>
+
+
+    <form oninput="info.value=name.value">
+        <fieldset>
+            <legend>Enter your details</legend>
+
+
+            <p>
+                <label>Name:</label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label>Email:</label>
+                <input type="email">
+            </p>
+            <p>
+                <label>Contact.No:</label>
+                <input type="password">
+            </p>
+            <p>
+                <label>Age:</label>
+                <input type="number">
+            </p>
+            <p>
+                <label>Date of birth</label>
+                <input type="date">
+            </p>
+            <p>
+                <label>Gender</label><br>
+                <input type="radio" name="gender"> Female<br>
+                <input type="radio" name="gender"> Male
+            </p>
+            <p>
+                <label>Interests</label><br>
+                <input type="checkbox"> Reading<br>
+                <input type="checkbox">Cooking<br>
+            </p>
+            <p>
+                <label>Country</label>
+                <select>
+                    <option>USA</option>
+                    <option>Nigeria</option>
+                    <option>India</option>
+                    <option>UK</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Save Information">
+            </p>
+        </fieldset>
+        <p>Your information:</p>
+        <output name="info"></output>
+    </form>
+</body>
+
+</html>
